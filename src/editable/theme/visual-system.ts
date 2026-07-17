@@ -1,6 +1,7 @@
 import { slot4BrandConfig } from './brand.config'
 
 export type Slot4VisualPreset =
+  | 'evergreen-gallery'
   | 'editorial-paper'
   | 'luxury-atelier'
   | 'brutalist-index'
@@ -10,6 +11,20 @@ export type Slot4VisualPreset =
   | 'visual-gallery'
 
 export const visualPresets = {
+  'evergreen-gallery': {
+    label: 'Evergreen Gallery',
+    mood: 'calm, premium, media-led',
+    fontDirection: 'Manrope display with Plus Jakarta Sans body',
+    colors: {
+      background: '#091413',
+      foreground: '#ecf7f1',
+      muted: '#97b7aa',
+      primary: '#408A71',
+      accent: '#285A48',
+      surface: '#10201d',
+    },
+    shape: 'generous radii, glass filters, layered media frames',
+  },
   'editorial-paper': {
     label: 'Editorial Paper',
     mood: 'calm magazine authority',
@@ -112,10 +127,10 @@ export const visualPresets = {
 
 export const visualSystem = {
   productKind: slot4BrandConfig.productKind,
-  recommendedPreset: 'tech-directory',
+  recommendedPreset: 'evergreen-gallery',
   radius: {
-    sm: '0.75rem',
-    md: '1.25rem',
+    sm: '1rem',
+    md: '1.4rem',
     lg: '2rem',
     xl: '2.75rem',
   },
@@ -126,16 +141,16 @@ export const visualSystem = {
     reduceMotionSafe: 'motion-reduce:transform-none motion-reduce:transition-none',
   },
   typography: {
-    eyebrow: 'text-xs font-semibold uppercase tracking-[0.24em]',
+    eyebrow: 'text-[11px] font-semibold uppercase tracking-[0.28em]',
     heroTitle: 'text-5xl font-semibold tracking-[-0.06em] sm:text-6xl lg:text-7xl',
-    sectionTitle: 'text-3xl font-semibold tracking-[-0.04em] sm:text-4xl',
+    sectionTitle: 'text-3xl font-semibold tracking-[-0.05em] sm:text-4xl',
     body: 'text-base leading-8',
-    caption: 'text-xs font-medium uppercase tracking-[0.18em]',
+    caption: 'text-[11px] font-medium uppercase tracking-[0.18em]',
   },
   surfaces: {
-    glass: 'border border-white/15 bg-white/10 backdrop-blur-xl',
-    paper: 'border border-black/10 bg-white shadow-[0_24px_70px_rgba(15,23,42,0.08)]',
-    quiet: 'border border-black/10 bg-black/[0.03]',
+    glass: 'border border-white/10 bg-white/6 backdrop-blur-xl',
+    paper: 'border border-white/8 bg-white/5 shadow-[0_24px_70px_rgba(0,0,0,0.22)]',
+    quiet: 'border border-white/8 bg-white/[0.04]',
     dark: 'border border-white/10 bg-black/30 shadow-[0_24px_70px_rgba(0,0,0,0.25)]',
   },
   layout: {
