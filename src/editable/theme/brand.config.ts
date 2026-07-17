@@ -13,7 +13,15 @@ export const slot4BrandConfig = {
   productKind,
   ogImage: siteIdentity.ogImage,
   accents: {
-    primary: '#d32323',
-    surface: '#ffffff',
+    primary: '#408A71',
+    secondary: '#285A48',
+    surface: '#F3FBF7',
+    ink: '#091413',
   },
+  typography: {
+    display: 'Manrope',
+    body: 'Plus Jakarta Sans',
+    feel: 'geometric sans',
+  },
+  styleLane: 'Evergreen media gallery',
 } as const

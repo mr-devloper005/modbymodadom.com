@@ -3,34 +3,32 @@ import { slot4BrandConfig } from '@/editable/theme/brand.config'
 export const globalContent = {
   site: {
     name: slot4BrandConfig.siteName,
-    tagline: slot4BrandConfig.tagline || 'Independent reading platform',
+    tagline: slot4BrandConfig.tagline || 'Visual publishing and profile discovery',
     domain: slot4BrandConfig.domain,
     baseUrl: slot4BrandConfig.baseUrl,
   },
   nav: {
-    tagline: 'Independent reading platform',
+    tagline: 'Visual publishing and profile discovery',
     primaryLinks: [
-      { label: 'Articles', href: '/articles' },
-      { label: 'Visuals', href: '/image-sharing' },
-      { label: 'Listings', href: '/listings' },
-      { label: 'Contact', href: '/contact' },
+      { label: 'Galleries', href: '/image' },
+      { label: 'Search', href: '/search' },
+      { label: 'About', href: '/about' },
     ],
     actions: {
-      primary: { label: 'Start exploring', href: '/' },
-      secondary: { label: 'Submit', href: '/contact' },
+      primary: { label: 'Open Publishing', href: '/create' },
+      secondary: { label: 'Contact', href: '/contact' },
     },
   },
   footer: {
-    tagline: 'Stories, resources, and discoverable posts',
-    description: 'A connected publishing surface for articles, visuals, listings, profiles, bookmarks, and downloadable resources.',
+    tagline: 'Profiles, galleries, and connected discovery',
+    description: 'A gallery-first public site built for browsing image posts, profiles, and connected archive pages through one polished interface.',
     columns: [
       {
-        title: 'Explore',
+        title: 'Browse',
         links: [
-          { label: 'Articles', href: '/articles' },
-          { label: 'Listings', href: '/listings' },
-          { label: 'Images', href: '/image-sharing' },
-          { label: 'PDF Library', href: '/pdf' },
+          { label: 'Images', href: '/image' },
+          { label: 'Search', href: '/search' },
+          { label: 'Create', href: '/create' },
         ],
       },
       {
@@ -38,10 +36,11 @@ export const globalContent = {
         links: [
           { label: 'About', href: '/about' },
           { label: 'Contact', href: '/contact' },
+          { label: 'Login', href: '/login' },
         ],
       },
     ],
-    bottomNote: 'Built for clean discovery and connected publishing.',
+    bottomNote: 'Built for clean visual discovery and consistent publishing.',
   },
   commonLabels: {
     readMore: 'Read more',
